@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::backdrop, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+
+    --color-primary: #FF0000;
+    
+
+    --bg-secondary: #28272C;
+    --bg-primary: white;
+}
