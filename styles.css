@@ -22,6 +22,7 @@ html {
 .container {
     max-width: 1088px;
     margin: 0 auto;
+    
 }
 
 /* ----HEADER---- */
@@ -136,16 +137,9 @@ html {
     justify-content: center;
     align-items: center;
 
-    
-
-    
-
 }
 
-
-
-
-.banner__logo {
+.banner__header {
     color: var(--text-primary);
     font: normal normal 900 90px/90px Nunito Sans;
     text-transform: uppercase;
@@ -163,14 +157,14 @@ html {
 
 }
 
-.banner__btn {
+.banner__btn-cont {
 
     display: flex;
     justify-content: center;
     gap: 25px;
 }
 
-.btn {
+.btn-big {
     padding: 22px 55px;
     border-radius: 40px;
 
@@ -200,3 +194,317 @@ html {
 
     border: none;
 }
+
+
+/* ---- BLOG ---- */
+
+.blog__card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.blog__header-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog__header {
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    text-transform: uppercase;
+
+    position: relative;
+    width: 400px;
+    text-align: center;
+
+    margin-top: 90px;
+    margin-bottom: 35px;
+}
+
+.blog__header::after, .blog__header::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    opacity: 1;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 23px;
+    right: 90px;
+}
+
+.blog__header::before {
+    left: 90px;
+}
+
+.blog__card { 
+    width: 352px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding-bottom: 80px;
+}
+
+.blog__card-header{
+    line-height: 26px;
+    font-size: 19px;
+
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-family: Nunito Sans;
+
+}
+
+.blog__card-text {
+    line-height: 19px;
+    font-size: 14px;
+
+    color: var(--text-tirtiary);
+
+    font-family: Open Sans;
+
+    text-align: left;
+}
+
+.blog__card-btn {
+    padding: 10px 29px;
+
+    background-color: var(--color-primary);
+    color: var(--text-primary);
+
+    border: none;
+
+    line-height: 19px;
+    font-size: 14px;
+}
+
+/* ---- Service ----*/
+
+.service {
+    background-color: var(--bg-secondary);
+}
+
+.service__header {
+    margin-top: 60px;
+    margin-bottom: 75px;
+    display: block;
+    text-align: center;
+    width: 400px;
+
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.service__header::after, .service__header::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+
+    background-color: var(--color-primary);
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    opacity: 1;
+
+    position: absolute;
+    top: 22px;
+    right: 65px;
+}
+
+.service__header::before {
+    left: 65px;
+}
+
+.service__header-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.service__card-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    
+
+}
+
+.service__card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    width: 235px;
+
+    padding-bottom: 100px;
+}
+
+.service__card img {
+    height: 170px;
+    width: 170px;
+}
+
+.service__card-header {
+    text-align: left;
+    font: normal normal normal 19px/26px Nunito Sans;
+    letter-spacing: 0px;
+    color: var(--text-primary);
+    opacity: 1;
+    text-transform: uppercase;
+
+}
+
+.service__card-text {
+    text-align: center;
+    font: normal normal normal 14px/19px Open Sans;
+    letter-spacing: 0px;
+    color: var(--text-tirtiary);
+    opacity: 1;
+}
+
+.btn-small {
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0px;
+    color: var(--text-primary);
+    background-color: var(--color-primary);
+    opacity: 1;
+    border: none;
+
+    padding: 11px 29px;
+    border-radius: 40px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    text-transform: uppercase;
+}
+
+
+
+/* ---- Contact ----*/
+
+.contact__header-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__header {
+    width: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+
+
+    margin-top: 65px;
+    margin-bottom: 35px;
+
+    position: relative;
+}
+
+.contact__header::before, .contact__header::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-primary);
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    opacity: 1;
+
+    position: absolute;
+    right: 60px;
+    top: 22px;
+}
+
+.contact__header::before {
+    left: 60px;
+}
+
+.contact img {
+    width: 444px;
+    height: 316px;
+}
+
+.contact__content-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+.content__form {
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content__form-name, .content__form-email {
+    height: 38px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    font: normal normal normal 16px/22px Nunito Sans;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+    opacity: 1;
+    padding: 8px 12px;
+}
+
+.content__form-textarea {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 8px 12px;
+
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+    opacity: 1;
+}
+
+.content__form-checkbox-cont div > label {
+    text-align: left;
+    font: normal normal 300 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: var(--text-tirtiary);
+    opacity: 1;
+}
+
+.content__form-checkbox-cont {
+    display: flex;
+    gap: 10px;
+}
+
+.content__form-submit {
+    align-self: center;
+    display: block;
+
+    background-color: var(--bg-primary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+
+
+
+
+
+
