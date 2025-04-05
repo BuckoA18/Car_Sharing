@@ -446,6 +446,8 @@ html {
     flex-direction: row;
     justify-content: center;
     gap: 16px;
+
+   margin-bottom: 40px;
 }
 
 .content__form {
@@ -494,13 +496,103 @@ html {
 }
 
 .content__form-submit {
-    align-self: center;
+    align-self: flex-end;
     display: block;
 
     background-color: var(--bg-primary);
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
+
+    padding: 11px 52px;
 }
+
+
+/* ---- Footer ---- */
+.footer {
+    background-color: var(--bg-secondary);
+}
+
+.footer .container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+   
+}
+
+.footer__header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 30px;
+    margin-top: 40px;
+    gap: 8px;
+
+}
+
+.footer__header-logo h4 {
+    font: normal normal bold 25px/34px Nunito Sans;
+    letter-spacing: 0px;
+    color: var(--text-primary);
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.footer__header-logo span {
+    color: var(--color-primary);
+}
+
+.footer__header-logo img {
+    width: 16.45px;
+    height: 18.95px;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 141px;
+    margin-bottom: 40px;
+
+    position: relative;
+}
+
+.footer__info a {
+    list-style-type: none;
+    text-decoration: none;
+
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0px;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    opacity: 1;
+
+}
+
+.footer__info a:hover {
+    color: var(--color-primary);
+}
+
+.footer__info li {
+    padding-bottom: 7px;
+}
+
+.footer__info-copyright {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    margin-bottom: 7px;
+
+    font: normal normal 300 12px/16px Nunito Sans;
+    letter-spacing: 0px;
+    color: #D1D1D1;
+    opacity: 1;
+}
+
 
 
 
