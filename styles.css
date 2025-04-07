@@ -210,6 +210,24 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+.banner__arrow-btn {
+    position: absolute;
+    bottom: 0px;
+    transform: translate(0%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+
+    background-color: var(--color-primary);
+
+    border-radius: 50%;
 }
 
 .blog__header {
